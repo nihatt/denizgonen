@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Deniz Gönen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap'); /* Yeni yazı tipleri eklendi */
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://wallpapers.com/images/hd/mountain-forest-background-qxuvtl6d9gdx9rcr.jpg')   center center;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif; /* Yeni yazı tipi uygulandı */
+            overflow: auto; /* Scroll olmayı önlemek için hidden yapıldı */
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5%;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+        .profile-name {
+            margin-top: 10px;
+            background: rgba(255, 182, 193, 0.8);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            font-family: 'Lobster', cursive; /* Yeni yazı tipi uygulandı */
+            font-size: 24px; /* Yazı tipi boyutu */
+        }
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .social-links a {
+            text-decoration: none;
+        }
+        .social-links img {
+            width: 40px;
+            height: 40px;
+        }
+        .description {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 80%;
+            margin-bottom: 20px; /* Alt boşluk */
+        }
+        .button-row {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+        }
+        .button {
+            flex: 1;
+            width: 50%; /* Butonların genişliğini %50 yap */
+            height: 100px; /* Sabit yükseklik */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif; /* Yeni yazı tipi uygulandı */
+            text-align: center;
+            box-sizing: border-box; /* Taşmayı engellemek için box-sizing eklendi */
+        }
+        .button img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        .button1 { background: #ff5733; }
+        .button2 { background: #33c4ff; }
+        .button3 { background: #75ff33; }
+        .button4 { background: #ff33a6; }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+    
+        <div class="content">
+            <div class="profile">
+                <img src="https://cdn.memorial.com.tr/files/Uploads/1/3/doc-dr-deniz-gorenjpg_abdb.jpg" alt="Doktor Resmi">
+                <div class="profile-name">Doç. Dr. Deniz GÖREN</div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/hilalban/">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/62-instagram-512.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/laldesignproject?locale=tr_TR">
+                    <img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-facebook-icon-png-images-icons-and-png-backgrounds-1.png" alt="Facebook">
+                </a>
+                <a href="https://doktorumsun.com/doktor/hilal-bankeroglu">
+                    <img src="https://static.vecteezy.com/system/resources/previews/027/395/710/non_2x/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" alt="Twitter">
+                </a>
+            </div>
+            <div class="description">
+                Doç. Dr. Deniz Gören, Memorial Şişli Hastanesi'nde İç Hastalıkları ve Hematoloji Uzmanı olarak görev yapmaktadır. Ankara Üniversitesi Tıp Fakültesi'nden mezun olduktan sonra, aynı üniversitede İç Hastalıkları uzmanlık eğitimini tamamlamıştır. Harvard Üniversitesi Tıp Fakültesi'nde post-doktora çalışmaları yapmış ve Eskişehir Osmangazi Üniversitesi'nde Hematoloji yandal uzmanlık eğitimini almıştır. 2017-2024 yılları arasında İstanbul Florence Nightingale Hastanesi'nde görev yapmış ve 2020 yılında doçent unvanını almıştır. İngilizce ve Fransızca bilmektedir.
+            </div>
+            <div style="padding-top: 30px;" class="content buttons">
+                <div class="button-row">
+                    <div class="button button1" onclick="window.location.href='tel:02123146666'">
+                        <img src="https://pngimg.com/d/phone_PNG49005.png" alt="Telefon">
+                        Telefon Numaram
+                    </div>
+                    <div class="button button2" onclick="window.location.href='https://www.instagram.com/denizgoren_md/'">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/62-instagram-512.png" alt="Instagram">
+                        Instagram Adresim
+                    </div>
+                </div>
+    
+                <div class="button-row">
+                    <div class="button button3" onclick="window.location.href='https://www.memorial.com.tr/doktorlar/deniz-goren'">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwS81mAbqmRSwP5Ld3sExsYIeUFTyEW1iFqw&s" alt="Facebook">
+                        Randevu & Bilgi
+                    </div>
+                    <div class="button button4" onclick="window.location.href='https://www.google.com/maps/place//data=!4m2!3m1!1s0x14cab72325d1a9cf:0xaddd3acd2b43b336?sa=X&ved=1t:8290&ictx=111'">
+                        <img src="https://www.pngfind.com/pngs/m/98-989040_google-logo-png-transparent-background-transparent-background-maps.png" alt="Konum">
+                        Konum Bilgim
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
